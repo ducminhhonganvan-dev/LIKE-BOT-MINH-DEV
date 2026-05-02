@@ -140,7 +140,7 @@ async def get_token(acc, session):
         if not uid:
             return None
 
-        url = f"https://jwtgen.chuong.qzz.io/token?uid={uid}&password={password}"
+        url = f"https://mafu-token-converter.onrender.com/token?uid={uid}&password={password}"
         async with session.get(url) as response:
             text = await response.text()
 
